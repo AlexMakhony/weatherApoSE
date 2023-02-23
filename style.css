@@ -1,0 +1,123 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body {
+    background-color: rgb(238, 231, 231);
+}
+
+
+li {
+    list-style: none;
+}
+
+
+
+.wraper {
+    margin-top: 150px;
+}
+
+.weather {
+    background-color: #7A956B;
+    color: aliceblue;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 350px;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.search-form {
+    display: flex;
+    justify-content: space-around;
+}
+
+.input {
+    max-width: 150px;
+    height: 40px;
+    font-size: 1em;
+    padding: 0 0.62em;
+    border: none;
+    border-bottom: 2px solid #7ee957;
+    outline: none;
+    color: #222a43;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.findBtn {
+    margin-right: 0;
+    padding: 5px 15px;
+    font-size: 16px;
+    text-align: center;
+    height: 40px;
+    width: 120px;
+    cursor: pointer;
+    background: linear-gradient(0deg, #DDEEFB -15.69%, #6ab46b 127.45%);
+    border-radius: 70px;
+    border: none;
+    filter: drop-shadow(0px 4px 8px #B5C7E5);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.findBtn:hover {
+    background: linear-gradient(0deg, #F7F3E0 -15.69%, #77e424 127.45%);
+}
+
+.search__wraper {
+    margin-bottom: 20px;
+    background-color: #7A956B;
+    color: aliceblue;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 350px;
+    margin: 0 auto 5px auto;
+    box-shadow: 0 0 10px rgb(0 0 0 / 30%);
+}
+
+
+
+.weather__loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather__loading img {
+    border-radius: 5px;
+    max-width: 50px;
+}
+
+.weather__header {
+    display: flex;
+}
+
+.weather__main {
+    flex: 1 1 auto;
+}
+
+.weather__city {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.weather__status {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.weather__temp {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.weather__temp::after,
+.weather__feels-like::after {
+    display: inline-block;
+    margin-left: 5px;
+    content: "°C";
+}
